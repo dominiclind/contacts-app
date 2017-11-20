@@ -1,0 +1,33 @@
+.empty-view{
+	display:flex;
+  position: absolute;
+  bottom: 0;
+  top: 60px;
+  left: 0;
+  right: 0;
+  justify-content:center;
+  align-items:center;
+
+  animation: fadeIn 2s ease;
+
+  .center{
+    padding:0 1em;
+    display:flex;
+    flex-direction:column;
+		text-align: center;
+    align-items:center;
+
+    animation: fadeInUp 1s ease;
+
+    h2{
+      margin-bottom:0;
+    }
+    p{
+      margin-bottom:2em;
+    }
+  }
+
+  img{
+  	max-width:150px;
+  }
+}

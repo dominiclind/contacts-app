@@ -6,6 +6,7 @@ import {
 
 export const initialState = {
   loading: false,
+  error: false,
   contacts: [],
   favorites: [] 
 };
@@ -15,6 +16,7 @@ export default function (state = initialState, action) {
     case GET_CONTACTS:
       return {
         ...state,
+        error: false,
         loading: true
       }
     case GET_CONTACTS_SUCCESS:
@@ -26,6 +28,7 @@ export default function (state = initialState, action) {
     case GET_CONTACTS_FAIL:
       return {
         ...state,
+        error:true,
         loading:false,
       }           
     default:

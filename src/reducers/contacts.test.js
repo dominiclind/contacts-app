@@ -20,6 +20,7 @@ describe('contact reducer', () => {
       })
     ).toEqual({
       ...initialState,
+      error:false,
       loading: true
     })
   })
@@ -41,7 +42,7 @@ describe('contact reducer', () => {
     })
   })
 
-  it('GET_CONTACTS_FAIL should return loading false and no contacts', () => {
+  it('GET_CONTACTS_FAIL should return loading false and no contacts and set error', () => {
     expect(
       reducer(undefined, {
         type: GET_CONTACTS_FAIL
@@ -49,6 +50,7 @@ describe('contact reducer', () => {
     ).toEqual({
       ...initialState,
       loading: false,
+      error: true
     })
   })
 

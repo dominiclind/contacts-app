@@ -4,7 +4,7 @@ import './_team-avatar.scss';
 export default (props) => (
 	<div className={`team-avatar ${props.small ? 'small' : ' '}`}>
 		{props.image ? (
-			<img className="img" alt={`Avatar of ${props.initials}`} src={props.image} />
+			<img className="img" alt={`${props.initials}`} src={props.image} />
 		) : (
 			<p className="letters">{props.initials}</p>
 		)}
