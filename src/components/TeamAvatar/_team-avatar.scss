@@ -1,0 +1,44 @@
+.team-avatar{
+	background:blue;
+	border-radius:999px;
+	width:55px;
+	height:55px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+
+	.letters{
+  	text-align: center;
+  	color: white;
+  	font-size: 25px;
+  	line-height: 25px;
+  }
+	
+	&.small{
+		width:40px;
+		height:40px;
+
+		.letters{
+			font-size:17px;
+		}
+	}	
+
+	.img{
+		width:100%;
+		height:auto;
+		border-radius: 999px;
+	}
+
+	.color{
+		display: block;
+		width:15px;
+		height:15px;
+		bottom:0;
+		right:0;
+		z-index:10;
+		border-radius: 999px;
+		border:2px solid white;
+	}
+
+}

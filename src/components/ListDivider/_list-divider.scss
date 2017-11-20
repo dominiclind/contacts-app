@@ -1,0 +1,30 @@
+.list-divider{
+	position:fixed;
+	top:60px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	background:white;
+	z-index:999;
+
+	.wrapper{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		padding:.4em 1em;
+		border-bottom:1px solid silver;
+	}
+
+	p{
+		margin:0;
+		font-size:0.8em;
+		font-weight:600;
+		text-transform: uppercase;
+	}
+	.label{
+	
+	}
+	.amount{
+
+	}
+}

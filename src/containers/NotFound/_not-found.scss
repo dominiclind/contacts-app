@@ -1,0 +1,56 @@
+@keyframes fadeIn{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes fadeInUp{
+	0%{
+		opacity:0;
+		transform: translateY(20px);
+	}
+
+	50%{
+		opacity:0;
+		transform: translateY(20px);
+	}
+
+	100%{
+		opacity:1;
+	}
+}
+
+.not-found{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
+	// animation:fadeIn .5s ease;
+	
+
+	background:url(http://i.imgur.com/Kw4sH.gif);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	h1{
+		font-size:3em;
+		margin-top:0;
+		margin-bottom:.5em;
+		color:white;
+
+		animation:fadeInUp .7s ease ;
+	}
+	.button{
+		animation:fadeInUp .9s ease ;
+	}
+}

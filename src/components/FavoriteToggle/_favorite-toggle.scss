@@ -1,0 +1,39 @@
+@keyframes starEntry{
+	0%{
+		opacity:0;
+		transform:translateX(40px)
+	}
+	100%{
+		opacity:1;
+		transform:translateX(0)
+	}
+}
+
+
+.favorite-toggle{
+	padding:.5em 0;
+	cursor:pointer;
+	transition:all 0.2s ease;
+
+	animation: starEntry 0.5s ease;
+
+	&:hover{
+		transform:scale(1.1);
+	}
+	&:active{
+		transform:scale(.95)
+	}
+
+	&.is-favorite{
+		.icon {
+			fill: #FFE066;
+			opacity:1;
+		}
+	}
+	.icon{
+		opacity:0.15;
+
+		width:30px;
+		height:30px;
+	}
+}

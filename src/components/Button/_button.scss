@@ -1,0 +1,97 @@
+.button{
+	background: black;
+	outline:none;
+	border:none;
+	appearance:none;
+	padding:.7em 1.8em;
+	height:40;
+	font-size: 1em;
+	font-weight: 500;
+	color: white;
+	border-radius: 999px;
+	cursor:pointer;
+	min-width: 140px;
+	position:relative;
+	transition:all .1s ease;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	&.has-icon{
+		padding:.35em 1.8em;
+	}
+
+	.icon{
+		height:30px;
+		width:30px;
+		margin-left:-15px;
+	}
+	&:hover {
+		background:darken(black, 10%);
+	}
+	&:active{
+		background:darken(black, 20%);
+	}
+	
+	&.small{
+		font-size:.9em;
+	}
+}
+
+
+.button.inverted{
+	color: black;
+	background: white;
+
+	&:hover{
+		background:darken(white, 5%)
+	}
+	.icon{
+		fill:black;
+	}
+}
+
+.button.positive{
+	color: white;
+	background: #A9E34B;
+	&:hover{
+		background:darken(#A9E34B, 5%)
+	}
+	&:active{
+		background:darken(#A9E34B, 15%)
+	}
+
+	&.inverted{
+		color: #A9E34B;
+		background: white;
+
+		&:hover{
+			background:darken(white, 5%)
+		}
+		&:active{
+			background:darken(white, 15%)
+		}
+	}
+}
+.button.negative{
+	color: white;
+	background: #F03E3E;
+	&:hover{
+		background:darken(#F03E3E, 5%)
+	}
+	&:active{
+		background:darken(#F03E3E, 15%)
+	}
+
+	&.inverted{
+		color: #F03E3E;
+		background: white;
+
+			&:hover{
+				background:darken(white, 5%)
+			}
+			&:active{
+				background:darken(white, 15%)
+			}
+	}
+}

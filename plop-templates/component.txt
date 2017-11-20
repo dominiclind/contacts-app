@@ -1,0 +1,9 @@
+import React from 'react';
+
+import './_{{dashCase name}}.scss';
+
+export default (props) => (
+	<div className="{{dashCase name}}">
+	  <p>I am component: {{properCase name}}</p>
+	</div>
+);

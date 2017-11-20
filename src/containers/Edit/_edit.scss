@@ -1,0 +1,90 @@
+@keyframes formFadeIn{
+	0%{
+		opacity:0;
+	}
+
+	40%{
+		opacity: 0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes editFadeIn{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+@keyframes buttonsFadeIn{
+	0%{
+		opacity:0;
+	}
+
+	50%{
+		opacity: 0;
+		transform:translateY(20px);
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0px);
+	}
+}
+
+
+.edit{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	animation:editFadeIn .5s ease;
+
+	.buttons{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		margin-top:1em;
+
+		animation: buttonsFadeIn .8s cubic-bezier(0.23, 1, 0.32, 1);
+		.button{
+			margin-bottom:.7em;
+		}
+	}
+	.form{
+		max-width:800px;
+		padding:0 1em;
+		align-items:center;
+		text-align: center;
+	}
+
+	.team-avatar{
+		margin:4em auto;
+		transform:scale(1.5);
+	}
+	.flex-grid{
+		display:flex;
+		margin:0;
+
+		animation: formFadeIn .5s ease;
+
+		&.halfs{
+			flex-wrap:wrap;
+		  display: flex;
+		  justify-content: space-between;
+	
+			.col{
+				width:calc(50% - .7em);
+			  margin-bottom:20px;
+
+			  @media(max-width:700px){
+			  	width:100%;
+			  }
+			}
+		}
+	}
+}

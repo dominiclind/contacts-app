@@ -1,0 +1,62 @@
+.toast{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:9999;
+	background: black;
+	padding:0 2em;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	cursor:pointer;
+
+	transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
+	
+	transform: translateY(0%);
+
+	&.hidden{
+		transform:translateY(-100%);
+	}
+	
+	.right{
+		display:flex;
+		p{
+			position:absolute;
+			opacity:0;
+			transform:translateX(100%);
+			margin:0;
+			padding:0;
+			right:2em;
+
+			transition:all 0.3s ease;
+		}
+		.icon{
+			opacity:1;
+			transform:translateX(0%);
+			transition:all 0.3s ease;
+		}
+	}
+	&:hover{
+		.right{
+			p{
+				transform:translateX(0%);
+				opacity:1;
+			}
+			.icon{
+				opacity:0;
+				transform:translateX(100%);
+			}
+		}
+	}
+	p{
+		color:white;
+		text-align: center;
+		padding:1em 0;
+	}
+
+	.icon{
+		fill:white;
+		
+	}
+}
